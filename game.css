@@ -1,0 +1,88 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image:url(kit.jpg) ;
+    background-position: 10%;
+    background-attachment: calc();
+    color: rgb(240, 235, 235);
+    padding: 50px 0;
+    text-align: left;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column; 
+    padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        flex-direction: row; 
+    }
+    #about, #title-heading {
+        flex: 1; 
+        margin: 10px; 
+    }
+}
+
+.photo-container, .content-container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.photo-container img, .content-container img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 5px; 
+}
+
+
+
+
+
